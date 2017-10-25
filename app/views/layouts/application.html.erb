@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ComicBooks</title>
+    <title>Comic Books</title>
     <%= csrf_meta_tags %>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,16 @@
   <body>
 
   <%= render 'layouts/navbar' %>
-  
+
+  <div>
+    <%= flash.each do |type, message| %>
+        <div class="alert <%= bootstrap_class_for(type) %> fade-in">
+          <button class="close" data-dismiss="alert">X</button>
+          <%= message %> 
+        </div>
+    <% end %>
+  </div>
+
     <div class="container">
     	<%= yield %>
     </div>
