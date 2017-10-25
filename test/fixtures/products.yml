@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  price: 9.99
+  qunatity: 1
+  description: MyText
+  publisher: MyString
+  rating: MyString
+  writer: MyString
+  pencilier: MyString
+  cover_artist: MyString
+  category_id: 1
+
+two:
+  name: MyString
+  price: 9.99
+  qunatity: 1
+  description: MyText
+  publisher: MyString
+  rating: MyString
+  writer: MyString
+  pencilier: MyString
+  cover_artist: MyString
+  category_id: 1
