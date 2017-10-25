@@ -7,7 +7,7 @@
     <tr>
       <th>Name</th>
       <th>Price</th>
-      <th>Qunatity</th>
+      <th>Quantity</th>
       <th>Description</th>
       <th>Publisher</th>
       <th>Rating</th>
@@ -15,6 +15,7 @@
       <th>Pencilier</th>
       <th>Cover artist</th>
       <th>Category</th>
+      <th>Brand</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -24,7 +25,7 @@
       <tr>
         <td><%= product.name %></td>
         <td><%= number_to_currency(product.price, :precision => (product.price.round == product.price)? 0 : 2) %></td>
-        <td><%= product.qunatity %></td>
+        <td><%= product.quantity %></td>
         <td><%= product.description %></td>
         <td><%= product.publisher %></td>
         <td><%= product.rating %></td>
@@ -32,6 +33,7 @@
         <td><%= product.pencilier %></td>
         <td><%= product.cover_artist %></td>
         <td><%= product.category.name %></td>
+        <td><%= product.brand %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>

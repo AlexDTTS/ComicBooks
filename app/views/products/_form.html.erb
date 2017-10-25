@@ -13,52 +13,57 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name, id: :product_name %>
+    <%= form.text_field :name %>
   </div>
 
   <div class="field">
     <%= form.label :price %>
-    <%= form.text_field :price, id: :product_price %>
+    <%= form.text_field :price %>
   </div>
 
   <div class="field">
-    <%= form.label :qunatity %>
-    <%= form.number_field :qunatity, id: :product_qunatity %>
+    <%= form.label :quantity %>
+    <%= form.number_field :quantity %>
   </div>
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_area :description, id: :product_description %>
+    <%= form.text_area :description %>
   </div>
 
   <div class="field">
     <%= form.label :publisher %>
-    <%= form.text_field :publisher, id: :product_publisher %>
+    <%= form.text_field :publisher %>
   </div>
 
   <div class="field">
     <%= form.label :rating %>
-    <%= form.text_field :rating, id: :product_rating %>
+    <%= form.text_field :rating %>
   </div>
 
   <div class="field">
     <%= form.label :writer %>
-    <%= form.text_field :writer, id: :product_writer %>
+    <%= form.text_field :writer %>
   </div>
 
   <div class="field">
     <%= form.label :pencilier %>
-    <%= form.text_field :pencilier, id: :product_pencilier %>
+    <%= form.text_field :pencilier %>
   </div>
 
   <div class="field">
     <%= form.label :cover_artist %>
-    <%= form.text_field :cover_artist, id: :product_cover_artist %>
+    <%= form.text_field :cover_artist %>
   </div>
 
   <div class="field">
     <%= form.label :category_id %>
-    <%= form.select(:category_id, @categories.collect{ |c| [c.name, c.id]}, { include_blank: "Select Category"}, required: :true, id: :product_category_id) %>
+    <%= form.select(:category_id, @categories.collect{ |c| [c.name, c.id]}, { include_blank: "Select Category"}, required: :true) %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand %>
+    <%= form.text_field :brand %>  
   </div>
 
 
