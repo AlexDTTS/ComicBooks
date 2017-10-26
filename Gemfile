@@ -12,6 +12,9 @@ gem 'cancancan' #set access for users , admins and all
 gem 'hirb' #rails console , stack nice per attribute
 gem 'jquery-rails'
 
+gem 'stripe'
+gem 'figaro'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'

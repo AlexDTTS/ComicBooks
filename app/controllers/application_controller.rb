@@ -6,6 +6,8 @@ class ApplicationController < ActionController::Base
 
 	before_action :categories, :brands
 
+	helper_method :current_order
+
 	# helper_method :current_order
 
 	rescue_from CanCan::AccessDenied do |exception|
@@ -25,6 +27,14 @@ class ApplicationController < ActionController::Base
 	# def items_in_cart
 	# 	@line_items = current_order.line_items
 	# end
+
+	def current_order
+		if !session[:order_id].nil?
+			Order.find(session[:order_id])
+		else
+			Order.new
+		end	
+	end
 
 	def categories
 	  	@categories = Category.all

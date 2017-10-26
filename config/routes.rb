@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get 'your_orders' => 'orders#your_orders'
 
-  post  'add_to_cart' =>'cart#add_to_cart'
+  post 'add_to_cart' =>'cart#add_to_cart'
 
   get 'view_order' => 'cart#view_order'
 
@@ -19,7 +19,7 @@ Rails.application.routes.draw do
 
   get 'categorical' => 'storefront#items_by_category'
 
-  get  'branding' => 'storefront#items_by_brand'
+  get 'branding' => 'storefront#items_by_brand'
 
   resources :categories
   resources :products
